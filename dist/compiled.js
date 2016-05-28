@@ -70,9 +70,11 @@ var diffChildren = function(oldChildren, newChildren, index, currentPatches, pat
 	_.each(oldChildren, function(oldChild, index){
 
 		var newChild = newChildren[index];
-		var currentNodeIndex = (leftNode && leftNode.count)
+
+		currentNodeIndex = (leftNode && leftNode.count)
 							? currentNodeIndex + leftNode.count + 1
 							: currentNodeIndex + 1;
+
 
 		dfsWalk(oldChild, newChild, currentNodeIndex, patches);
 		leftNode = oldChild;
@@ -175,7 +177,7 @@ function patch(root, patches){
 
 	var walker = {index:0};
 
-	patchWalk(root, walker.index, patches);
+	patchWalk(root, walker, patches);
 
 }
 
@@ -209,7 +211,7 @@ var applyPatches = function(node, currentPatch){
 
 				break;
 			case 'PROPS':
-				setProps(node, currentPatchItem.props);
+				setProps(node, currentPatchItem.prop);
 				break;
 			case 'REORDER':
 				reorderChildren(node, currentPatchItem.moves);
