@@ -1,5 +1,5 @@
 {
-  "name": "virtual-dom",
+  "name": "s-virtual-dom",
   "version": "1.0.0",
   "description": "a simple virtual dom",
   "main": "index.js",
