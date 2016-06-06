@@ -10,9 +10,16 @@
     "virtual",
     "dom"
   ],
-  "author": "sixiaohui",
+  "author": {
+    "name": "sixiaohui"
+  },
   "license": "ISC",
   "dependencies": {
     "list-diff2": "^0.1.2"
-  }
+  },
+  "gitHead": "aaa57a7c7b581ef49a201dc6d229a3f9f8ca9bbf",
+  "readme": "ERROR: No README data found!",
+  "_id": "s-virtual-dom@1.0.0",
+  "_shasum": "4afbecff5ca6351ec86f5afcb0df0eab8f0eb245",
+  "_from": "s-virtual-dom@>=1.0.0 <2.0.0"
 }
